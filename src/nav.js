@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import { Link ,NavLink } from "react-router-dom";
-
 const Navbar=()=>{
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
@@ -19,14 +18,14 @@ const Navbar=()=>{
                             </Link>
                         </p>
                         <p>
-                            <NavLink to='/skills' class='btn1'>
+                            <Link to='skills' class='btn1'>
                                 SKILLS
-                            </NavLink>
+                            </Link>
                         </p>
                         <p>
-                            <NavLink to='/projects' class='btn1'>
+                            <Link to='projects' class='btn1'>
                                 PROJECTS
-                            </NavLink>
+                            </Link>
                         </p>
                  
                         <Link type="button" to='contact' class='btn3'>JOIN US</Link>
@@ -51,25 +50,23 @@ const Navbar=()=>{
                     <div className="sb__navbar-menu_container scale-up-center">
                         <div className="sb__navbar-menu_container-links">
                             <p>
-                                <NavLink to='/'>HOME</NavLink>
+                                <Link to='/'>HOME</Link>
                             </p>
                             <p>
-                            <NavLink to='/skills' class='btn1'>
+                            <Link to='skills' class='btn1'>
                                 SKILLS
-                            </NavLink>
+                            </Link>
                             </p>
                             <p>
-                                <NavLink to='/projects' class='btn1'>
+                                <Link to='projects' class='btn1'>
                                     PROJECTS
-                                </NavLink>
+                                </Link>
                             </p>
-                            </div>
-                          <div className="sb__navbar-menu_container-links-sign">
-                           
+                        </div>
+                            <div className="sb__navbar-menu_container-links-sign">
                                 <button type="button" class='btn3'>JOIN US</button>
-                           
                             </div> 
-                            </div> 
+                    </div> 
                    )}
                 </div>
             </div>

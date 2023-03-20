@@ -10,23 +10,20 @@ import Sec2 from './sec2.js';
 import Sec3 from './sec3.js';
 import Contact from './Footer.js';
 import Navbar from './nav';
-import Footer from './Footer.js';
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
-    <Home/>
-    <Skills/>
-    <Projects/>
     <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='skills' element={<Skills/>} />
-      <Route path='projects' element={<Projects/>} />
-      <Route path='/sec1' element={<Sec1/>} />
-      <Route path='/sec2' element={<Sec2/>} />
-      <Route path='/sec3' element={<Sec3/>} />
+      <Route index element={<Home/>} />
+      <Route path='/skills' element={<Skills/>} />
+      <Route path='/projects' element={<Projects/>} >
+        <Route path='sec1' element={<Sec1/>} />
+        <Route path='sec2' element={<Sec2/>} />
+        <Route path='sec3' element={<Sec3/>} />
+      </Route>
+      <Route path='/contact' element={<Contact/>} />
     </Routes>
-    <Footer/>
     </BrowserRouter>
     
    );
