@@ -27,10 +27,9 @@ const Navbar=()=>{
                                 PROJECTS
                             </Link>
                         </p>
-                 
-                        <Link type="button" to='contact' class='btn3'>JOIN US</Link>
-                   
+                            <Link type="button" class='btn3' to='contact'>JOIN US</Link>
                 </div>
+                
                 <div className="sb__navbar-menu">
                    {toggleMenu ? (
                     <RiCloseLine
@@ -50,7 +49,7 @@ const Navbar=()=>{
                     <div className="sb__navbar-menu_container scale-up-center">
                         <div className="sb__navbar-menu_container-links">
                             <p>
-                                <Link to='/'>HOME</Link>
+                                <Link to='/' class='btn1'>HOME</Link>
                             </p>
                             <p>
                             <Link to='skills' class='btn1'>
@@ -62,11 +61,10 @@ const Navbar=()=>{
                                     PROJECTS
                                 </Link>
                             </p>
-                        </div>
-                            <div className="sb__navbar-menu_container-links-sign">
-                                <button type="button" class='btn3'>JOIN US</button>
-                            </div> 
+                        </div> 
+                        <Link type="button" class='btn3' to='contact'>JOIN US</Link>
                     </div> 
+                    
                    )}
                 </div>
             </div>
