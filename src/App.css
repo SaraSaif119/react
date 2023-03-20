@@ -200,6 +200,7 @@ a:hover{
 .h1{
     text-align: center;
     margin: 10px;
+    margin-top: 100px;
 }
 
 
@@ -232,7 +233,10 @@ a:hover{
 .div6{
     background-image: url(Honeyview_flat-lay-desk-concept-with-copy-space.jpg);
     background-repeat: no-repeat;
-
+    width:800px ;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
 }
 .item{
     outline: none;
