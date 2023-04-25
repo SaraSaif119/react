@@ -92,7 +92,7 @@ a:hover{
 .div2{
     margin: auto;
     width:70vw ;
-    height:10vh;
+    height:50px;
     background-color: black;
     margin-top:40px ;
     border-radius: 30px;
@@ -237,6 +237,8 @@ a:hover{
     margin: auto;
     margin-top: 50px;
     border-radius: 30px;
+    padding-bottom: 100px;
+
 }
 .item{
     outline: none;
@@ -369,7 +371,9 @@ a{
     .sb__navbar{
         padding: 0.5rem 1rem;
     }
-   
+   .div2{
+
+   }
 }
 
 @media screen and (max-width:550px) {
