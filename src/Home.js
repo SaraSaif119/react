@@ -16,29 +16,29 @@ function Home() {
       tick();
     },delta)
     return ()=>{clearInterval(ticker)};
-},[text])
-const tick=()=>{
-  let i=loopNum%words.length;
-  let fullText=words[i];
-  let updatedText=isDeleting?fullText.substring(0,text.length-1):fullText.substring(0,text.length+1);
-  setText(updatedText);
-  if(isDeleting){
-    setDelta(prevDelta=>prevDelta/2)
-  }
-  if(!isDeleting&&updatedText===fullText){
-    setIsDeleting(true);
-    setDelta(period);
-  }
-  else if(isDeleting&&updatedText===''){
-    setIsDeleting(false);
-    setLoopNum(loopNum+1);
-    setDelta(500);
+  },[text])
+  const tick=()=>{
+    let i=loopNum%words.length;
+    let fullText=words[i];
+    let updatedText=isDeleting?fullText.substring(0,text.length-1):fullText.substring(0,text.length+1);
+    setText(updatedText);
+    if(isDeleting){
+      setDelta(prevDelta=>prevDelta/2)
+    }
+    if(!isDeleting&&updatedText===fullText){
+      setIsDeleting(true);
+      setDelta(period);
+    }
+    else if(isDeleting&&updatedText===''){
+      setIsDeleting(false);
+      setLoopNum(loopNum+1);
+      setDelta(500);
 
   }
   }
 //////////////////////////////////////////////
     return (
-    <div class="card col-md-12 " id='home'>
+    <div class="col-md-12" id='home'>
       <div class="row ">
         <div class="col-md-6">
           <div class="card-body btn2">

@@ -1,5 +1,6 @@
 *{
     top: 0%;
+    
 }
 .btn1{
     margin: 20px;
@@ -292,12 +293,11 @@ input{
     border: none;
     color: aliceblue;
     background-color:rgb(141, 104, 2) ;
-    position: absolute;
-    left: 69vw;
-    margin-top: 250px;
+    margin-left: 100px;
 }
 .end{
     text-align: center;
+    margin-top: 40px;
 }
 .brand{
     padding-left: 20px;

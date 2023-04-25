@@ -13,18 +13,16 @@ import Navbar from './nav';
 function App() {
   return (
     <BrowserRouter>
-    <Navbar/>
-    <Routes>
-      <Route index element={<Home/>} />
-      <Route path='/skills' element={<Skills/>} />
-      <Route path='/projects' element={<Projects/>} >
-        <Route path='sec1' element={<Sec1/>} />
-        <Route path='sec2' element={<Sec2/>} />
-        <Route path='sec3' element={<Sec3/>} />
-      </Route>
-      <Route path='/contact' element={<Contact/>} />
-    </Routes>
-    </BrowserRouter>
+ 
+      <Navbar/>
+      <Home/>
+      <Skills/>
+      <Projects/>
+      <Sec1/>
+      <Sec2/>
+      <Sec3/>
+      <Contact/>
+   </BrowserRouter> 
     
    );
 }
